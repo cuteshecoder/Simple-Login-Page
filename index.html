@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <h2>LOGIN HERE</h2>
+            <P>Fill the below form correctly</P>
+            <div class="main">
+                <form>
+                    <input type="text" name="username" placeholder="Username" required>
+                    <br>
+                    <br>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <br>
+                    <br>
+                    <input type="tel" name="phone no." placeholder="Phone No." required>
+                    <br>
+                    <br>
+                    <label for="gender">Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" name="Gender" id="male" value="male" required> 
+
+                <label for="female">Female</label>
+                <input type="radio" name="Gender" id="female" value="female" required>
+                <br>
+                <br>
+                    <input type="passwword" name="passwword" placeholder="Password" required>
+                    <br>
+                    <br>
+                    <button type="submit" id="btn" onclick="submitForm()">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const submitForm = () => {
+            let x = document.querySelector('form');
+            x.submit()
+            alert('Successful');
+        }
+    </script>
+</body>
+</html>
